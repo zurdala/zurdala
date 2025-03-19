@@ -9,5 +9,5 @@ You can follow me on [LinkedIn](https://www.linkedin.com/in/daniel-lubar/) to se
  
 ## Stats
 
-![Metrics](/metrics.plugin.isocalendar.svg)
+![Metrics](/github-metrics.svg)
 
