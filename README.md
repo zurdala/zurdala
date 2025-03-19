@@ -1,4 +1,4 @@
-# Hello there, visitor! 👋
+# Hello there, visitor!
 I'm Dani (he/him). I'm a space engineer with a touch of software developer, and I'm an open source and open science advocate. 
 
 In my free time, I'm either hiking or reading a good old scifi novel.
