@@ -1,13 +1,19 @@
 # Based off of https://github.com/lowlighter/metrics
 name: Metrics
 on:
-  # Weekly updates
-  schedule: [{cron: "40 13 * * 3"}]
-  push: {branches: ["master", "main"]}
+  # Schedule daily updates
+  schedule: [{cron: "0 0 * * 1"}]
+  # (optional) Run workflow manually
   workflow_dispatch:
+  # (optional) Run workflow when pushing on master/main
+  push: {branches: ["master", "main"]}
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
+    environment: 
+      name: production
+    permissions:
+      contents: write
     steps:
       - uses: lowlighter/metrics@latest
         with:
@@ -18,7 +24,6 @@ jobs:
           # Fancy isometric calendar
           filename: metrics.plugin.isocalendar.svg
           plugin_isocalendar: yes
-
           # Options
           user: zurdala
           template: classic
